@@ -11,18 +11,19 @@ import 'responsive/responsive_layout_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  if (kIsWeb) {
-    await Firebase.initializeApp(
-        options: const FirebaseOptions(
-      apiKey: "AIzaSyBLTPh29lieMIzNx9jdz6zhV1Hr1u-kxO8",
-      appId: "1:626459613098:web:493f5850c26d19c50abdd3",
-      messagingSenderId: "626459613098",
-      projectId: "instagram-clone-fd025",
-      storageBucket: "instagram-clone-fd025.appspot.com",
-    ));
-  } else {
-    await Firebase.initializeApp();
-  }
+  // if (kIsWeb) {
+  //   await Firebase.initializeApp(
+  //       options: const FirebaseOptions(
+  //     apiKey: "AIzaSyCPHWmtVqJu1upqS9BicblEn8vfFyreBzY",
+  //     appId: "1:488687783595:web:90c06b3da83de82d93b1ee",
+  //     messagingSenderId: "488687783595",
+  //     projectId: "flutter-instagram-8a02e",
+  //     storageBucket: "flutter-instagram-8a02e.appspot.com",
+  //   ));
+  // } else {
+  //   await Firebase.initializeApp();
+  // }
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
